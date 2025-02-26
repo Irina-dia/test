@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <title>Тестовое задание веб-разработчик в Romikey Довгалюк И.</title>
+    <meta name="description" content="тестовое задание">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">   
+    <link rel="stylesheet" href="./assets/css/style.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <nav class="header__menu marquee">
+                <ul class="list header__list"></ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section container">
+                <div class="hero">
+                    <h1 class="title title_first-type title_white">услуги</h1>
+                    <p class="paragraph paragraph_hero paragraph_white space_mt-40">Мы оказываем комплекс различных услуг и предоставляем широкий выбор пактов - от разовых до полного сопровождения группы проектов по всем направлениям.</p>
+                </div>
+                <div class="services servicesSwiper">
+                    <div class="services__items swiper-wrapper"></div>
+                </div>
+            </section>           
+        </main>
+        <footer class="footer">
+            <p class="paragraph paragraph_title paragraph_white marquee"><span class="paragraph paragraph_blue">создаем с нуля </span> стратегии кампании медиапланы интеграции отчеты ux сайты репутации <span class="paragraph paragraph_blue">создаем с нуля </span> стратегии кампании медиапланы интеграции отчеты ux сайты репутации</p>
+        </footer>
+    </div>
+
+    <template id="headerItemTemplate">
+        <li class="header__item"></li>
+    </template>
+
+    <template id="servicesItemTemplate">
+        <div class="swiper-slide services__item">
+            <div class="services__header">
+                <h2 class="title title_second-type title_white service__title"></h2>
+                <p class="paragraph paragraph_price paragraph_blue"></p>
+                <a href="https://romikey.ru/web-analytics/" class="services__link">На&nbsp;страницу</a>
+            </div>
+            <ul class="list services__list"></ul>
+        </div>
+    </template>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
